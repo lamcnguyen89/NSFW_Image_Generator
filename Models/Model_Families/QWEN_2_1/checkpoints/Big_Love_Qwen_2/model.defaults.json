@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "model_2937e2ae-3021-41ed-a67c-44ad8e11bb29",
+  "display_name": "Big Love Qiara1 (Qwen-Image 2.1 BF16)",
+  "description": "Local Qwen-Image 2.1 fine-tune. Conservative 40-step baseline from the notebook; the author's custom 6/10-step sampler has not been reproduced or verified here.",
+  "family": "qwen_2_1",
+  "workflow": "qwen_2_1",
+  "model_variant": "qwen_image_2_1",
+  "weights_component": "transformer",
+  "source_url": null,
+  "source_model_id": null,
+  "source_version_id": null,
+  "weights": "BigLoveQiara1_bf16.safetensors",
+  "sha256": null,
+  "base_model_id": "Qwen/Qwen-Image-2.1",
+  "notes_file": "Big_Love_Qiara1.md",
+  "preview_image": null,
+  "supported_modes": [
+    "txt2img"
+  ],
+  "requirements": {
+    "dimension_multiple": 32,
+    "pipeline_class": "QwenImage21Pipeline",
+    "transformer_class": "QwenImage21Transformer2DModel",
+    "scheduler_class": "FlowMatchEulerDiscreteScheduler",
+    "scheduler_config": {},
+    "allowed_sampling": [
+      {
+        "sampler": "flow_match_euler",
+        "noise_schedule": "default"
+      }
+    ]
+  },
+  "settings": {
+    "prompt": "",
+    "negative_prompt": "",
+    "positive_prefix": "",
+    "positive_suffix": "",
+    "trigger_words": [],
+    "width": 2048,
+    "height": 2048,
+    "num_images_per_prompt": 1,
+    "num_inference_steps": 40,
+    "true_cfg_scale": 1.0,
+    "use_kv_cache": true,
+    "sigmas": null,
+    "seed": 42,
+    "sampling": {
+      "sampler": "flow_match_euler",
+      "noise_schedule": "default"
+    },
+    "loras": [
+      {
+        "id": "lora_441bc8d4-8d4f-41a6-a737-4e5667a5af61",
+        "enabled": false,
+        "strength": 0.3
+      }
+    ]
+  }
+}

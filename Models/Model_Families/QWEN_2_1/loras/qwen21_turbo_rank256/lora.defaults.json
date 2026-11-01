@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "lora_441bc8d4-8d4f-41a6-a737-4e5667a5af61",
+  "display_name": "Qwen 2.1 Turbo rank 256 (local)",
+  "description": "Local Turbo adapter, offered as an optional Big Love softness/sharpness adjustment. Strength 0.3 is a suggested starting point, not a verified preset.",
+  "family": "qwen_2_1",
+  "adapter_type": "lora",
+  "source_url": null,
+  "source_model_id": null,
+  "source_version_id": null,
+  "weights": "../qwen21_turbo_rank256.safetensors",
+  "sha256": null,
+  "notes_file": null,
+  "preview_image": null,
+  "compatibility": {
+    "model_variant": "qwen_image_2_1",
+    "trained_on": null,
+    "verified_checkpoint_ids": [],
+    "notes": "Qwen 2.1 target is inferred from the local filename and checkpoint notes; exact training provenance and inference compatibility have not been verified. Big Love notes describe an optional Turbo ratio from -0.3 to 0.5. This is an adjustment range for that checkpoint, not a general Turbo acceleration recipe. No checkpoint is marked verified; no step count or sigma schedule is applied automatically."
+  },
+  "settings": {
+    "strength": 0.3,
+    "trigger_words": [],
+    "positive_prefix": "",
+    "positive_suffix": "",
+    "negative_prompt": "",
+    "recommended_generation": {}
+  }
+}

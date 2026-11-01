@@ -14,6 +14,11 @@ checkpoint and LoRA examples are available directly in the `checkpoints/` and
 The notebooks still use their existing Python settings and do not read these
 JSON files yet.
 
+Qwen-Image 2.1 now has checkpoint and LoRA manifest pairs plus reusable family
+examples. See [its configuration guide](QWEN_2_1/README.md) for Qwen-specific
+guidance, sigma schedules, resolution suggestions, and the current integration
+status.
+
 ```text
 Model_Families/
 ├── SDXL/
